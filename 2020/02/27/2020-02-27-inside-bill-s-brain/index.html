@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="Ch">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Bill Lee">
+
+
+
+
+
+<title>Inside Bill&#39;s Brain | Bill Lee&#39;s Notes</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Bill Lee&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Bill Lee&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">Inside Bill&#39;s Brain</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Bill Lee</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">February 27, 2020&nbsp;&nbsp;8:00:00</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/Read/">Read</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>Inside Bill’s Brain: Decoding Bill Gates (2019) 是戴维斯·古根海姆拍摄的三集纪录片，导演带领我们管窥这位富有影响力的人物怎样度过了生命的64年。舅舅当年给我起了英文名也叫做Bill，四舍五入我也算是世界首富了。</p>
+<p>从财富的角度上来说，盖茨无疑是世界上最成功的人。天分，勤奋，机遇，不可复制。这样的男人每天都在做什么，想什么，我是挺好奇的。</p>
+<blockquote>
+<p>这部全新的三集纪录片探索了著名技术先驱、商业领袖和慈善家比尔·盖茨的思想和抱负。在辞去微软首席执行官职务之后，盖茨将时间和出色才智投入到解决一些世界上最持久的问题上，由此便开始了现代史上最伟大的职业生涯第二幕。</p>
+</blockquote>
+<p>我写了几篇简介觉得还是豆瓣网上的概括更准确，于是乎放弃了挣扎：</p>
+<blockquote>
+<p>该剧集深入并真实地描述了比尔·盖茨在人生历程中经历的成功和挫折，以前所未有的深度让我们了解了比尔·盖茨，他的乐观、好奇心和热情曾激发他对微软的初始愿景，现在也激励他为世界上一些最复杂的问题寻求解决方案。《走进比尔》记录了这些努力与个人时刻，采访了比尔和梅琳达·盖茨，以及他们的朋友、家人、慈善事业和商业上的合作伙伴，塑造了一个富于创新的真实的人物形象，在改变世界之后，他可能还将改变人们看待世界的方式。</p>
+</blockquote>
+<p>一部两个半钟头的纪录片拍不到一个人的全面，导演和主演只会让观众看到他们希望观众看到的，通过这个人的经历来证明这的确是真实的一面。有时候我也好奇这样了不起的人物究竟有没有什么样的弱点陋习，来让我和世界首富找一找相同点，当然我失败了。这一部纪录片看得非常过瘾，所以我想专门写一篇日志聊一聊我通过这个片子看到的比尔，比尔是一个了不起的人。</p>
+<h2 id="职业生涯"><a href="#职业生涯" class="headerlink" title="职业生涯"></a>职业生涯</h2><p>不得不说从商业领袖到慈善家，他改变了太多人的生活。</p>
+<h3 id="微软"><a href="#微软" class="headerlink" title="微软"></a>微软</h3><p>毫无疑问盖茨是一个天才。</p>
+<p>盖茨在读高中时就展现出了超出常人的数学能力与编程能力。正是在中学里他结识了学长保罗·艾伦，后来微软的另一位创始人。某一个暑假，两个天才接受了学校的委托为学校解决了新学期的排课难题，给湖滨中学的每一位同学编制课表。从此更多的校长们慕名而来。后来盖茨从哈佛大学辍学创业，这是一个不到二十岁的人做出的决定，盖茨就是如此与众不同。</p>
+<p>还有这个人干起活来不要命的。</p>
+<blockquote>
+<p>如果你在写一个程序那就把它写完，别考虑睡觉。</p>
+</blockquote>
+<blockquote>
+<p>我喜欢工作，工作是我的全部生活。</p>
+</blockquote>
+<blockquote>
+<p>我有一个优势就是我的狂热，工作就是我的生活，我会全力以赴，不分昼夜，完全专注于如何写出好的软件。</p>
+</blockquote>
+<blockquote>
+<p>说到底我很享受，我不相信什么周末，我不相信度假。</p>
+</blockquote>
+<p>“我有一句名言：‘这是我听说过的最傻的想法’”，你看盖茨这个人是这么讲话的，很强，很狂。</p>
+<p>保罗·艾伦最终离开了微软。当年盖茨和保罗一起为IBM写软件，交工的前三天保罗去观看了登月发射，盖茨一个人解决了工作。这两个人一个是工作狂，一个不是，盖茨与保罗之间的矛盾越来越深。盖茨说：“我长时间地工作，我不把这种观点强加给别人，但我觉得这样是很好的。”，表面上看这两个人是理念不同，真正为什么分道扬镳，我们这些看客就不得而知了。</p>
+<p>微软能够成为上个世纪最伟大的公司之一，离不开盖茨夜以继日地工作。盖茨是一个优秀的程序员，更是一个优秀的商人。微软抓住了时代的机遇，抓住了大部分人的需求。</p>
+<p>梅琳达在2014年斯坦福大学的毕业典礼演讲上袒露。“比尔工作无比努力，他冒过很多风险，做过很多牺牲，才取得了今天的成功。但成功还有另外一个很重要的成分，那就是运气，完全纯粹的运气，这些都不是我们自己挣得的，而是天生就有的。”，仔细想想这个级别的成功创业者，除了个人的努力奋斗以外，一定要考虑历史的行程。</p>
+<h3 id="慈善"><a href="#慈善" class="headerlink" title="慈善"></a>慈善</h3><p>盖茨2000年开始放手微软，虽然对于微软的董事会他还是有着重大的影响力。为什么盖茨离开微软可能只有他本人明白了，不过比尔和梅琳达·盖茨基金会也是2000年成立，充分说明盖茨开始将注意力转移到了第二个职业身份上来。盖茨把目光从商业报表转向了人类关心的问题。一个人开始关心地球上其他千千万万人的福祉，这不是共产主义精神是什么。导演在节目里介绍了盖茨基金会正在运作的三个大项目：</p>
+<ul>
+<li><p>厕所</p>
+<p>非洲国家缺乏大规模建设排水系统的资金，因此河流等饮用水源深受人类排泄物的污染，从而导致成千上万的人罹患疟疾。盖茨要做的就是通过设计一种廉价的抽水马桶完成粪便的处理，从源头上消灭疟疾。</p>
+</li>
+<li><p>脊灰</p>
+<p>为非洲、印度的孩子们接种疫苗，让他们免受小儿麻痹症的困扰。盖茨的目标是消灭这种疾病，而人类目前为止消灭的疾病也只有天花。他的团队使用算法提高接种疫苗的效率，通过高清卫星地图的照片识别那些村落，规划行进的路线。这事儿真不是光花钱就那么简单，还需要当地宗教势力的介入。</p>
+</li>
+<li><p>能源</p>
+<p>化石能源的大量燃烧引起了全球变暖，盖茨想做的就是研究出安全的核反应堆来降低二氧化碳的排放。他成立了泰拉电力，召集工程师，希望实现行波反应堆。他希望与中国政府合作建造反应堆，自然最后受到了灯塔国政府的强力阻挠。</p>
+</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://www.gatesfoundation.org/zh/">比尔和梅琳达·盖茨基金会 - Bill &amp; Melinda Gates Foundation</a>网站的标题就是<strong>所有生命价值平等，我们是致力于消除不平等现象的乐天行动派</strong>。盖茨说最希望的是世界上的孩子们得到平等的对待，不是因为出生在纽约或者尼日利亚而有所不同。老友巴菲特也赞成盖茨的理念，“每个人的生命都具有平等的价值”，并且拿出身家的一半捐给盖茨基金会。</p>
+<p>今年在中国爆发新冠疫情的时候，盖茨基金会宣布提供500万美元紧急赠款，支持中国抗击新冠肺炎疫情。之后，承诺投入最高1亿美元赠款，其中一部分用于直接帮助中国加速在药物、疫苗及诊断方法研发等方面的工作。</p>
+<p>盖茨关注疾病、能源，毫无疑问这是关乎人类生存的大问题。</p>
+<h2 id="亲人挚友"><a href="#亲人挚友" class="headerlink" title="亲人挚友"></a>亲人挚友</h2><ul>
+<li><p>母亲</p>
+<p>比尔盖茨的光芒太过耀眼，其实比尔的老妈<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E7%8E%9B%E4%B8%BD%C2%B7%E7%9B%96%E8%8C%A8/8787772?fr=aladdin">玛丽·盖茨</a>也很厉害：</p>
+<p><em>1975年至1993年任华盛顿州立大学校董事。她是金县联合劝募协会的首名女性总裁，还是全国联合劝募协会执行理事会的首名女性主席。值得注意的是，她在任全国联合劝募协会执行理事会主席期间与IBM的首席执行官约翰埃克斯共事。她还是第一州际银行公司的首名女性主管。</em></p>
+<p>比尔深受母亲的影响，导演问比尔：“你最难过的是哪一天？”，“母亲过世的那一天。”。当时比尔只有39岁，就在比尔结婚的这一年，玛丽悄悄地离开了人世。</p>
+<p>儿时的盖茨总喜欢自己躲在房间里看书（真·学霸），沉浸在自己的世界里。盖茨的母亲非常担心，邀请社区里的家庭一起去度假，举办各种各样的户外比赛，强迫盖茨参加社交。盖茨不喜欢，甚至在餐桌上和妈妈起了冲突。盖茨爸爸因此带着全家去看心理医生，结果发现仅仅是母子之间的矛盾。我觉得这样的教育也是比尔成功的一部分。</p>
+<p>盖茨的母亲在60年代就给儿子创造使用电脑的机会，给他介绍了第一份IBM的工作，支持他辍学去创业，劝说他去见见巴菲特促成了两个人的友谊……</p>
+<p>母亲在儿子成长的路上其实一直都如影随形。</p>
+</li>
+<li><p>妻子</p>
+<p>作为世界首富的妻子是什么样的感觉？比尔说他们是平等的。比尔也会犯错，梅琳达也会毫不留情地指出来。</p>
+<p>在两人结婚之前，比尔是梅琳达的CEO，梅琳达是微软最年轻的员工，唯一的MBA。</p>
+<p>梅琳达第一次到纽约出差，聚餐时，她坐在比尔的旁边 。</p>
+<p>一个周六下午，比尔和梅琳达在微软的停车场相遇。“我们聊了一会，然后他说，‘ 两周之后的周五晚上和我出去吧。’我说，两周之后啊，对我来说还不是特别自然，我不知道啊，到时候叫我吧。”梅琳达后来回忆。比尔后来给了她电话。梅琳达答应了。</p>
+<p>导演问盖茨：“如果你今天被汽车撞了，有哪件事会让你说：‘天呐我真希望我做了这件事我还没做呢？’”</p>
+<p>盖茨表情严肃：“感谢梅琳达。”</p>
+<p>梅琳达小盖茨9岁，作为全职太太她抚育了三个孩子，比尔则终日忙于工作对家人缺少陪伴，想一想偌大的豪宅，孤独的妻子，其实是相当残忍的。</p>
+<p>一次梅琳达向比尔哭诉“我受不了，你总不在家。”，比尔握着她的手：“梅琳达，不管我到哪儿，我们都在一起。”</p>
+<p>生活真的是如人饮水，冷暖自知。</p>
+<p>比尔的父亲母亲做什么都一起，任何事情，他们认为用这种方式过的才像夫妻。</p>
+<blockquote>
+<p>我和梅琳达都喜欢了不起的盖茨比，她有一盏绿灯，她办公室没人时，就点亮，我就知道可以过去了。那就是来自书中黛西在码头尽处点起的灯。原文是“他经历了漫长的道路才来到这片蓝色的草坪上，他的梦一定就像是近在眼前，他几乎不可能抓不住的。”</p>
+</blockquote>
+<p>浪漫。</p>
+<p>正是梅琳达让盖茨变得更加开放、耐心和有同情心。盖茨自己也承认：由于梅琳达，他很愿意扮演新的角色；梅琳达在基金会也做着自己热爱的事业。</p>
+<p>祝愿他们相伴余生。</p>
+</li>
+<li><p>巴菲特</p>
+<p>两位大佬的关系非常好，聪明人的惺惺相惜。巴菲特比盖茨要大25岁，两个人一起的镜头总少不了可乐的身影，老巴爱喝樱桃味的。</p>
+</li>
+</ul>
+<center><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1582038773842&di=f67a7cdc99f35ca27f053bb8cccb9bd4&imgtype=0&src=http%3A%2F%2Fstatic.managershare.com%2Fuploads%2F2014%2F11%2F26891416557002.jpg" style="zoom:65%" align = "center"/></center>
+
+<h2 id="比尔其人"><a href="#比尔其人" class="headerlink" title="比尔其人"></a>比尔其人</h2><p>比尔最不希望大脑停止工作，时间是他无法购买的东西，即便是全世界最富有的人。</p>
+<p>据说他一小时阅读150页，记忆其中90%的内容。比尔每周日更新书单，满满一大袋子书看起来有个十几本的样子。他阅读大量的书，越是复杂晦涩越喜欢。一个卓越的大脑，他喜欢复杂，越是复杂，越是兴奋，这是多么反人性的习惯。如果有什么说不通，他就会质疑你。</p>
+<p>比尔经常习惯咬着眼镜腿儿看书和思考，我也学着看书的时候咬眼镜腿儿，自我感觉帅是挺帅，就是近视眼是真的啥都看不见。</p>
+<p>遇到巨大挫折时比尔会怎么办？他会尽量退后一步，尽量客观地思考。当他情绪沮丧时，他会寻求自己的安全空间——智慧，那样就不会感受到痛苦。</p>
+<p>比尔喜欢被锁在屋子里，几个小时专注于一件事情，“如果你能把精力高度集中寻找你所需要的东西上，最终就会有所收获。”</p>
+<p>比尔是个技术狂人，认为技术可以拯救一切。“遇到任何问题我都考虑能否用技术创新去解决，那就是我应对一切问题的方式。”，这也是盖茨在基金会解决厕所问题时从全世界征集优秀的工程师来设计最便宜的厕所，寻找最优秀的科学家研究核反应堆。“如果你不是为了鼓舞人心，你是为了什么？”，盖茨回答：“世界的资源是有限的，效果最大化。”。比尔很显然身上有一股搞技术的务实精神，毕竟他曾经是一个软件工程师。</p>
+<p>“如果我们失败了？除非我们失败了。”，干就完事了。</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>导演在结尾问道：“厕所，有希望，但是很贵。脊灰，上百亿美元，今年病例又增加了；泰拉电力，你和中国的协议告吹了，我知道你在努力寻求在美国建造反应堆，但我想你也知道，希望渺茫。你是否也有过一个念头：’太难了，我想做的太多了，我不干了。‘”</p>
+<p>盖茨稍作停顿：“有的时候你的确不得不说，“我们放弃吧”，有时候你不得不说，“我需要更加努力” (<em>Work harder</em>)”</p>
+<p>面对巨大困难的时候，他总是给出相同的答案：“要更努力”，他的优点也就是永不放弃的执着，是否也是个缺点？</p>
+<p>镜头里的比尔徒步行走在崇山峻岭之中，画外的旁白说到：“当你遇到一个想要改变世界的人，一个永不放弃的人，一个有着比尔这样头脑的人，你很难不被感动，但也很难不产生疑问：他是否陷得太深，他能解决这些问题吗？或许永远可望不可及？”，这个65岁的老人会给出他的答案的。</p>
+<p>盖茨的一生深受母亲的影响，纪录片的结尾是玛丽·盖茨的一段演讲，也许那是盖茨开始的初心吧：</p>
+<blockquote>
+<p>每个人一开始，都要先给成功下一个你自己的定义，有了这些对我们自身具体的期待，我们就更有可能成功。说到底，那不在于你得到了什么，甚至也不在于你给予了什么，而在于你成为了怎样的人。</p>
+</blockquote>
+<p>我想盖茨是一个完美的人，他具有相当多人类美好的品质，完美的人生，这些真实的故事展现了一颗才华横溢而又善良美好的心，值得我们观看、思考，究竟要成为怎样的人。</p>
+
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2020/03/14/2020-03-14-inspire-a-generation/">激励一代人</a>
+            
+            
+            <a class="next" rel="next" href="/2020/01/30/2020-01-30-Mamba-out/">科比</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Bill Lee | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
