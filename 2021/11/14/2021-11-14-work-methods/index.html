@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="Ch">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Bill Lee">
+
+
+
+
+
+<title>职业打工人感想 | Bill Lee&#39;s Notes</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Bill Lee&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Bill Lee&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">职业打工人感想</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Bill Lee</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">November 14, 2021&nbsp;&nbsp;08:00:00</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>从8月底正式进入公司以来大约三个月了，总结一下正式进入职场的感受。核心就是：成年人的世界充满痛苦，拼搏与奋斗是永恒主题。正因为了解了这一点，也越来越想要在生活中寻求慰藉。</p>
+<p>人总是要学会适应不同的环境，所谓可塑性就是多大程度能抛弃自己的执念和成见迅速适应不同的环境吧。为啥新人容易塑造，就是他的观念容易认同新环境。见过的越多，人越坚定，也越难以跳出去适应别的环境了。可塑性还有一点影响因素是从观念改变到行动改变的传导速度，我是比较固执己见的人，但是在职场里往往是不利的，毕竟适应工作环境也是很重要的能力了，所以打碎自己的自大和习惯，重塑一个工作里的自己很重要。</p>
+<p>关于最近的感想，我简单说几点哈：</p>
+<h1 id="向工作要结果"><a href="#向工作要结果" class="headerlink" title="向工作要结果"></a>向工作要结果</h1><p>领导关心的是交代给你的事情干好没有，而不是你加了多少班结果事情还是没干好。有了功劳的苦劳才值得被记住，没有功劳的苦劳没有价值。有句话叫<strong>向工作要结果，向生活要过程</strong>。反过来讲，只要领导关心的事情做好了，准点下班没人说你。生活就是这样，<strong>聪明比苦干重要</strong>，千万不要加班加到自我感动但是不出成绩。</p>
+<h2 id="工作讲方法"><a href="#工作讲方法" class="headerlink" title="工作讲方法"></a>工作讲方法</h2><p>所谓上班就是拼尽全力为了准时下班。所以<strong>领导不关心的活儿不必硬干，领导关心的活儿要狠干</strong>，这是职场生存的第一法则。为了快速达到自己的目的，脸皮厚一点，多找人求助求助，该找人要材料就要材料，该找人要代码就要代码，客气一点不会惹人烦的，省下来不用返工的时间都是自己的。当然也不能太过分麻烦别人，拿捏好尺寸就行。其实大伙很乐意互相帮助，有时候求人帮忙也是建立良好关系的一种办法。我就是太怕麻烦别人，脸皮太薄，很多事情都自己来做，其实没必要。</p>
+<p>另外就是安排事情的处理顺序，<strong>分清轻重缓急</strong>。说起来容易，做起来麻烦。我打算试一试：紧急且重要的一定要留整块的黄金时间，其余杂项事务集中处理。咱们干活要学会给别人排期，为了别人把自己的事儿耽误了就不好了。因为经常接电话被打乱工作节奏，导致每天的时间被分割地七零八碎，每到晚上就觉得一天只接了电话，常常在多件事情之间切换非常耗费精力。我越来越理解领导跟我讲的“归类问题”，就是集中处理不那么重要的事情，把整块时间留给自己。</p>
+<p>还有就是沟通，有时候觉得自己听懂领导交代的事情了，其实理解有偏差。最好的办法就是拉住对面说一遍自己的理解，等待对方确认。<strong>工作里最怕“你以为”</strong>，哪怕偏差一点点，很多工作又要返工了。千万不能怕麻烦，一定对齐两边口径。即便对面说“我听懂了”，也要拉住再问一遍，确保真的听懂了。</p>
+<p>再有一个<strong>好记性不如烂笔头</strong>。随手用笔记记下来各种事情非常重要，防止自己“贵人多忘事”。</p>
+<p><strong>得处处为别人想</strong>，为领导想，我这个工作不能让领导给我擦屁股；为同事想，我的工作不能妨碍别人。同时做营销也是这样，不然顾客凭啥买你的产品不买别人的。所以摸清楚别人的需求，就相当于抓住别人的软肋了。</p>
+<h2 id="工作讲心态"><a href="#工作讲心态" class="headerlink" title="工作讲心态"></a>工作讲心态</h2><p><strong>虚心</strong>接受来自领导同事的建议，并且按照这些建议迅速转变工作方式。毕竟他们工作了这么多年总结的经验，必须理解到这些工作经验的可贵之处。</p>
+<p>前些天总处于火烧屁股的状态，许多事情一起来，坐在工位上处理事情都是如坐针毡。什么时候能做到“事急人不急”，还是很磨练人的心性的。为啥要<strong>事急人不急</strong>，主要还是确保自己不出错。我发现我现在的毛病是忙里容易出错，经手的事情就懒得检查了。所以但凡是经过自己的手的文件，还是要仔细捋一遍，不能把最后检查把关的负担留给领导，因为这个事情被领导提醒多次，必须注意了。</p>
+<p><strong>不到最后不放弃</strong>，这是新来的部门领导教给我们的。当年他推销出去一笔巨额贷款的经历非常有趣，就是因为他的坚持，看起来项目花落别家，但是还是争取到了另外的项目。为了工作都得豁出去啊。</p>
+<p>还有<strong>加班不懊恼</strong>。生活里的忙碌、困难必须接受，本来就不容易。与其生气郁闷委屈，不如想开点坦然接受，毕竟你刚来，不压榨你能去压榨谁呢。当然不合理的要求一定要推脱，也不能净当傻白甜了。</p>
+<h1 id="向生活要过程"><a href="#向生活要过程" class="headerlink" title="向生活要过程"></a>向生活要过程</h1><p><strong>工作是公司的，生活是自己的</strong>。照顾好家人和自己，这是我觉得最重要的任务。某一天清晨我站在地铁车厢里看着大家都在投入地刷手机或者补回笼觉，突然觉得闲下来好好享受生活很重要。改善自己的生活，尝试自己多做饭，尤其是尝试新菜式；去健身房健身也能感到快乐；买电饭煲，买有营养的食物……生活里很多新的事物都让人觉得有趣。只可惜周末只有两天！</p>
+<h1 id="人无远虑，必有近忧"><a href="#人无远虑，必有近忧" class="headerlink" title="人无远虑，必有近忧"></a>人无远虑，必有近忧</h1><p>最近总是在想十年后的事情，职业规划应该怎么做，想来想去没有头绪。又贪恋国企在年龄大时可以划水的保障，又觉得外面的机会更大更精彩。即便是都亲身体会也说不清楚自己究竟适合哪一种。</p>
+<p>正是因为<strong>没有远虑导致近忧重重，反过来近忧又让人无法顾及远虑</strong>。</p>
+<p>现在最怕的状态就是温水煮青蛙而不自知，对未来思考不够是很致命的。希望年终总结的时候能有所结论吧。</p>
+<h1 id="像一个成年人一样生活"><a href="#像一个成年人一样生活" class="headerlink" title="像一个成年人一样生活"></a>像一个成年人一样生活</h1><p>当自己体会到生活的艰辛，工作到精疲力竭，深刻感到从前那个以自己为中心的学生和家庭年代已经离我远去了。那天在跑步机上调着不同的速度的时候想到，学生时代就像慢速的跑步机，你可以随心所欲调整步频，紧跑两步就不会担心被甩掉；成年人的跑步机要努力奔跑，你的腿脚被皮带推着，慢一步就会摔倒。那些身体好的人在这个高速运转的生活中依旧游刃有余。是<strong>被生活推着走呢，还是能够掌握生活的节奏</strong>，每个人都有自己的体会。希望我们都能够不断变强，拥有掌握生活的能力。</p>
+<p>絮絮叨叨半天，最后说一句，<strong>为了不加班奋斗终身！</strong></p>
+
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/%E6%84%9F%E6%82%9F/"># 感悟</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2021/09/07/2021-09-07-The-awakening-of-people/">《觉醒年代》</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Bill Lee | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
