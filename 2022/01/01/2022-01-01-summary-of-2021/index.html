@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="Ch">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Bill Lee">
+
+
+
+
+
+<title>2021年度总结 | Bill Lee&#39;s Notes</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Bill Lee&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Bill Lee&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">2021年度总结</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Bill Lee</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">January 1, 2022&nbsp;&nbsp;08:00:00</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/">年度总结</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>今年过完，在人间已经度过26个整整的年头，9497天。自从长大离家，心理上感觉一年比一年过的快，不知不觉中疫情又陪伴了人类一年。今年的变化很多，按照时间线大概捋一捋：</p>
+<p>1-3月：刚刚预答辩结束快乐地回京实习，忙碌而充实。</p>
+<p>4-6月：回家探望手术后的老妈，校庆之后返厦，在休闲、答辩、演出、告别好友、毕业旅行中结束了学生生涯。</p>
+<p>7-8月：返京待业到7月底后正式入职、培训。</p>
+<p>9-12月：社畜至今。</p>
+<p>今后不太可能再有这么丰富多彩的一年了，整体来说我想给这一年打10分（满分10分），没有任何遗憾，见到了许多想见的人，完成了许多心愿，体验了人生最美好的阶段，接下来就是自己尝试着独当一面，安排余生的道路了，很尽兴的一年。</p>
+<p>今年也是关注了“认真的天马”公众号后觉得很受启发，不管是生活上、工作上、学习上都觉得开始有目标，有改变。人生最重要的几件事，主要是工作、学习、健康、婚姻、养老、投资。这几个维度基本上构成了我们的时间分配，基本上围绕这几个维度来看一年的成绩。</p>
+<h1 id="2021总结"><a href="#2021总结" class="headerlink" title="2021总结"></a>2021总结</h1><p>今年最大的感受就是，要离开一直以来为我遮风挡雨的家庭，自己来安排人生的一切。如今要对自己对自己的生活负责任，每天早上坐在地铁里想着长达几十年的职业生涯就感到茫然与压力。青年总是迷茫与焦虑的，希望人生能够越活越明白与宽阔吧。</p>
+<h2 id="关于工作"><a href="#关于工作" class="headerlink" title="关于工作"></a>关于工作</h2><p>与前半年的实习不同，我进入的公司更讲究服从与秩序，上下级之间的等级关系更加森严。真正上班与实习的区别非常大，你承担的责任、领导对你的期望、要求都上升了一个档次。之前也写过一些关于工作上的思考：<a href="https://billlee.name/2021/11/14/2021-11-14-work-methods/">职业打工人感想</a>。再做一点补充吧：</p>
+<p><strong>领导的话不是建议，是命令</strong>，满足领导的期望非常重要，这是工作的首位。</p>
+<p><strong>良好的工作习惯</strong>，独立解决问题的能力非常重要，在职场中不麻烦同事是一种基本素养。最难的一点我觉得还是安排好工作任务的轻重缓急，自驱地完成工作，这一块还需要摸索。</p>
+<p><strong>遇到问题不能躲</strong>，解决一件事一定要做到底，这是专业性的体现，我觉得这方面终于开始有意识，接下来就是认真践行了。</p>
+<p><strong>如何高效工作</strong>，现在遇到一个问题就是加班太多，怎么白天做完所有的工作，这个问题确实得想办法解决，挤出来的时间都是生活可以用的，这一块今年需要做思考的。</p>
+<h2 id="关于学习"><a href="#关于学习" class="headerlink" title="关于学习"></a>关于学习</h2><p>五月份去拜访阿杭哥的时候，聊起自己总是不够自律，阿杭哥问我：“你没有自己的事情要干吗。”，我觉得说的很好，他真的是有想要做的事情，于是就能驱动自己去做。今年年底前一周，我开始给工作之余的时间布置任务，发现上一周还真的开始执行写文章的目标，玩起来也有所节制，而不是一直消磨时光了。自己此时对生活有了掌控的感觉，明年要继续保持下去。</p>
+<p>今年开始在子怡的教导下做菜，虽然发挥水平总是不稳定，觉得有所入门。</p>
+<p>今年没有读书，当我从厦门往北京寄了100斤行李，里面包裹的大部分书籍也没有翻开看过，其实看我今年更的文章就知道没怎么搞学习了。另一方面碎片化的阅读占了大多数，基本上都是微信公众号的阅读或者视频网站的学习，没有留下痕迹，学习效果很可能打折。</p>
+<p>今年看主旋律的影视作品比较多，比如《大决战》、《觉醒年代》、《跨过鸭绿江》、《1950他们正年轻》，以及1900影剧室的一系列作品，觉得自己在对中国革命与党史方面有所认识。</p>
+<h2 id="关于健康"><a href="#关于健康" class="headerlink" title="关于健康"></a>关于健康</h2><p>等明年公司体检好好检查一下。今年去健身房测体脂的结果确实是内脏脂肪偏多，肌肉不足。</p>
+<p>两个自己目前最大的毛病，一个是晚上很想吃东西，另外一个我一直以来有的毛病是熬夜，确实下班晚了之后舍不得早睡，总是有享受自己远离工作时间的冲动，比如玩一会或者偶尔写点东西。</p>
+<p>自律地解决这些问题暂时还不能做到，如何不带痛苦地执行自律的指令，这个事儿还真得琢磨琢磨。</p>
+<h2 id="关于婚姻"><a href="#关于婚姻" class="headerlink" title="关于婚姻"></a>关于婚姻</h2><p>个人觉得今年在感情上有进步，虽然吵了几次架，甚至一度闹到说出分手，最后觉得两个人的距离更进一步，不会轻易伤害对方，那些不快最终也成为羁绊，在青涩的岁月里闪闪发光，我对未来要面临的婚姻充满了信心。</p>
+<h2 id="关于投资"><a href="#关于投资" class="headerlink" title="关于投资"></a>关于投资</h2><p>实在是工资捉襟见肘，每月能结余的数目可忽略不计。万把余元基本上配置在活期和固收里，赚个几十块。只有百分之十配置在基金上，虽然略有折损但是我很看好未来医疗主题。确实通过小额的投资感受到这是一件非常专业，需要认真研究的事情，复杂程度相当高。</p>
+<h2 id="关于养老"><a href="#关于养老" class="headerlink" title="关于养老"></a>关于养老</h2><p>今年关于养老上的思考几乎为0，毕竟刚刚毕业也实在是没有余钱配置养老相关的保险，明年再看吧。</p>
+<h1 id="2022计划"><a href="#2022计划" class="headerlink" title="2022计划"></a>2022计划</h1><p>不立Flag才能不倒Flag，所以从前我是不做年度总结的。不过凡事预则立，不预则废，今后不再会有老师、家长直接安排你的生活，自己要对自己的生命负责，以及可预见的马上要对家庭负责任，生活会逼迫你不断前进。所以一定要做2022年的To Do List。</p>
+<h2 id="工作计划"><a href="#工作计划" class="headerlink" title="工作计划"></a>工作计划</h2><p>明年这一年不打算跳槽，我觉得还是有必要摸清楚我现在所在的这个行业与工作环境的。</p>
+<p>工作上的计划基本上以服从组织安排为主，研究研究如何才能早下班，主要是把工作之余的时间安排好。</p>
+<h2 id="学习计划"><a href="#学习计划" class="headerlink" title="学习计划"></a>学习计划</h2><p>学习计划主要也是明年要完成的几个专题的研究，除了碎片化、推荐信息流的阅读之外，必须有成体系地学习思考才行，这也是今年刷了许多知乎和微信公众号的感受。随机式地学习在当下看完之后有一种又懂了一个道理，觉得很爽，但是这之后看过的东西再也不会有一点水花，这样的时间花的不值。我觉得真正好的学习应该是盖大楼，把新学的东西放在已有的知识体系里解释，如果没有这样的体系，就应该补充到自己的体系里，专门去吃掉这一块知识。</p>
+<p><strong>知识体系梳理</strong>，这件事情之所以重要，在于了解自己的核心竞争力，也是依托此来想明白今后要深耕的方向。</p>
+<p><strong>公司架构梳理</strong>，了解自己的公司是如何运转的，理清公司的组织架构，每个部门存在的意义。</p>
+<p><strong>宏观经济学25讲与金融经济学25讲</strong>，这两套徐高老师的课程必须在今年拿下，不必多言。</p>
+<p><strong>毛选第一卷</strong>，尤其是《实践论》与《矛盾论》两篇的精读。</p>
+<p><strong>穷查理宝典</strong>，这一本属于拆封很久了但是还没看完的书。</p>
+<p><strong>段永平投资合集</strong>，这也是天马推荐的一本大书，个人觉得对于学投资是必须学的。</p>
+<p>具体先看这么多，中途必定会有要增加的或者插队的。实际上学习计划基本上也是写作计划了，学习留痕非常重要。</p>
+<p>我现在感觉看书之后能够用到生活里比看了多少更重要，所谓学习除了有书本的学习，还应该有实践学习的形式。书本上的知识真正能用到生活里，应该还是有所监督，这个事情或许能用定期自省来完成。所以明年应当制定一张自省表，按月监测评价。到年底可以看看所有的计划执行情况。</p>
+<h2 id="健康计划"><a href="#健康计划" class="headerlink" title="健康计划"></a>健康计划</h2><p>每周跑步两次吧，对于管住嘴我是没什么信心，跑步跳绳可以搞起来。</p>
+<p>一个小目标：瘦下来至少5斤，用啥手段自己想办法。</p>
+<h2 id="养老计划"><a href="#养老计划" class="headerlink" title="养老计划"></a>养老计划</h2><p>明年先学学看，这一块还是不太懂，不好做计划。</p>
+<h2 id="婚姻计划"><a href="#婚姻计划" class="headerlink" title="婚姻计划"></a>婚姻计划</h2><p>希望今年我司的出京政策宽松些，能见家长，2023年就有结婚的基础啦。</p>
+<h2 id="投资计划"><a href="#投资计划" class="headerlink" title="投资计划"></a>投资计划</h2><p>还是基金和理财为主，基金每半个月定投500元，主要还是现在的薪水不支持……还是以学习和增加本金为主！</p>
+<p>2022年，要磨砺自己的勇气，担起自己的责任，不惧挑战，生活就是一场修行，庙里不如家里，安排好自己的生活，干就完事了。</p>
+
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/"># 年度总结</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2021/11/27/2021-12-25-money/">《货币》</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Bill Lee | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
