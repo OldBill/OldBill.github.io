@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="Ch">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Bill Lee">
+
+
+
+
+
+<title>《滴滴曹乐：如何成为技术大牛》 | Bill Lee&#39;s Notes</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Bill Lee&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Bill Lee&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">《滴滴曹乐：如何成为技术大牛》</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Bill Lee</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">March 13, 2022&nbsp;&nbsp;08:00:00</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E4%B9%A6%E8%AF%84/">书评</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>之前在桔厂实习的时候，内网里就拜读过这一篇，<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?src=11&timestamp=1647151018&ver=3673&signature=yIB*pKeha0l2NN2qTaYssmZe7Y9FOxFTaM7F64LIviK*MxC8fNuQDH7FTxAgrDET84tSfA3bRY*w4htHDSr4k53wgLNa6q6hQmcK9rMRR*eXAJe5UGjHeBzW-dNE7ZWv&new=1">《滴滴曹乐：如何成为技术大牛》</a>，值得反复地看、反复实践揣摩，坚持下去。我打印出来两份，在地铁上读了几遍，觉得非常过瘾。</p>
+<p>这篇文章的主旨就是如何结合日常工作，成为一名技术领域的专家，在市场上保有持久的竞争力。这一篇我就基本引用原文了，学霸就是学霸，假如我中学就能掌握这样的方法就好了。</p>
+<h3 id="接纳焦虑"><a href="#接纳焦虑" class="headerlink" title="接纳焦虑"></a>接纳焦虑</h3><p>同学们普遍对成长充满了焦虑感。工作太忙没时间学习，需求太多太琐碎感觉自己没什么进步，做技术是不是做到35岁以后就没人要了，等等，都是对成长焦虑的体现。这种焦虑是正常的，所有的渴望，在内心的投射其实都是焦虑。相反的，如果内心中没有这种焦虑，反而是值得担忧的。这可能说明已经习惯呆在自己的舒适区了。在现在这样一个高速发展的社会，以及我们这样一个高速发展和变化的行业，失去对成长的渴望和焦虑反而是一个非常危险的信号。</p>
+<h3 id="如何学习"><a href="#如何学习" class="headerlink" title="如何学习"></a>如何学习</h3><p>如何学习，其实是有方法论的，那就是刻意练习。所谓的10000小时成为大牛的理论是片面的，如果只是简单重复10000小时，是不可能成为大牛的。刻意练习包含了三个步骤。第一，找到你要学习的这个领域体系的范式（pattern）；第二，针对每个范式刻意的反复学习和练习；第三，及时反馈。</p>
+<p>当学习方法不正确的时候，刻苦的学习常常只是看起来很勤奋，并没有应有的效果。当接触一个陌生领域的时候，错误的学习方法是不带目的性，上来就找一堆相关的大部头开始啃。而正确的学习方法应该是快速梳理该领域的知识点，形成框架体系（寻找pattern），这里有些小窍门可以快速构建起一个领域的知识点体系，例如看一些该领域的综述性或开创性的文章（看论文，别瞎看网上的文章），或者找本该领域综述性的教科书看它的目录（注意，好的教科书的目录往往就是这个领域的知识框架，内容倒不一定非要看下去）。然后，针对每个知识点，找书里的相关章节，该领域相关paper里的相关section深入学习，建立起自己对这个知识点的理解（刻意练习）。最后，再把知识点和现实工作中的情况（自己工作，或其他公司相关的工作）进行对照（及时反馈），从而建立对一个知识点的深度理解，最后融会贯通建立对一个领域的理解。</p>
+<p>这三个阶段并不是割裂的，而是周而复始的，经常会在刻意练习和及时反馈的学习过程中，发现自己遗漏的知识点，或者发现自己梳理的两个知识点其实是重合的。通过这种交叉比对，以及在实践中不断检验的方式建立的知识点是非常可落地的，而不会看了几篇论文以后就人云亦云。</p>
+<h3 id="在日常工作中学习"><a href="#在日常工作中学习" class="headerlink" title="在日常工作中学习"></a>在日常工作中学习</h3><p>其实工作和学习本身，是不应该被割裂的。工作本来就应该是学习的一部分，是学习中的实践和及时反馈的部分。学习如果脱离工作的实践，其实是非常低效的。因此每个同学应该对自己工作所在的这个技术和业务领域进行系统性的学习，并在工作中反复实践和验证。不同的领域之间其实是融汇贯通的，当你对一个领域精通并总结出方法论以后，很容易就能上手别的领域。因此花几年实践彻底研究透一个领域，对于刚工作几年的同学来说，是非常重要，甚至是必须的，也只有在一个领域打透之后才谈得上跨领域迁移，去拓展自己的知识面。<strong>更直接的说，对于一个领域还未完全掌握的同学，深度是最重要的，不用想广度的事情，等掌握了一个领域之后，再去拓展广度就变得很容易了。</strong></p>
+<p>从日常工作中学习的秘诀，就是“行动中思考”。总结起来看，行动中思考，就是始终保持好奇，不断从工作中发现问题，不断带着问题回到工作中去；不断思考，不断在工作中验证思考；不断从工作中总结抽象，不断对工作进行复盘，持续不断把工作内容和全领域的知识交叉验证，反复实践的过程。</p>
+<p><strong>在工作所在的技术和业务领域中刻意练习，加上行动中思考，就是成为技术大牛的秘诀。</strong></p>
+<h3 id="和坚持相比，方法其实并没有那么重要"><a href="#和坚持相比，方法其实并没有那么重要" class="headerlink" title="和坚持相比，方法其实并没有那么重要"></a>和坚持相比，方法其实并没有那么重要</h3><p>尽管我们通篇都在讲方法，但其实在成为技术大牛的路上，方法反而是没那么重要的。真正困难的，在于数年，数十年如一日的坚持。太多人遇到挫折，遇到瓶颈，就觉得手头的事情太乏味枯燥，就想要换一个方向，换一个领域，去学新的技术，新的东西。而真正能够成为大牛的，必须是能够青灯古佛，熬得住突破瓶颈前长时间的寂寞的，必须是肯下笨功夫的聪明人。因此，和坚持相比，方法其实并没有那么重要。</p>
+
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/%E4%B9%A6%E8%AF%84/"># 书评</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2022/03/08/2022-03-08-Upward-Managing/">《向上管理：如何正确汇报工作》</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Bill Lee | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>

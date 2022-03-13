@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="Ch">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Bill Lee">
+
+
+
+
+
+<title>《向上管理：如何正确汇报工作》 | Bill Lee&#39;s Notes</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Bill Lee&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Bill Lee&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">《向上管理：如何正确汇报工作》</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Bill Lee</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">March 8, 2022&nbsp;&nbsp;08:00:00</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E4%B9%A6%E8%AF%84/">书评</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>在地铁上断断续续看完了这本书，觉得值得慢慢消化。对于一个真正初入职场的人来说，怎么看待工作，怎么完成工作，这些心态和技巧的准备相当重要。仔细体会能够发现我的上司其实就是这样工作的，我总结一些感想在这里，希望今后能够遵照执行，养成良好的工作习惯。</p>
+<p>个人体会这本书所有的出发点是：你真正的角色定位是什么：“解决问题的人”，有这样的角色定位后，随之而来的就是Owner精神，整个团队的问题就是我的问题，整个团队的目标就是我的目标。这是一切工作技巧的根源，在工作态度面前，技巧反而没那么重要。</p>
+<p><strong>向上管理是由员工来管理自己的上司，工作由员工来掌握。这种模式下员工要主动承担工作，自己掌握工作进度和质量，每一份工作都由员工来做主导者。换言之，就是在工作当中，员工能够将自己当成领导者，向上管理的真谛就在于此。当你掌握了向上管理之后，你就能在工作中主动出击，积极向上，保持这样的工作状态，用不了太长时间，你的上司就会意识到你在公司中所起的作用，你也在职场中站稳了脚跟。你让上司卓有成效，他也会回报你成效。专业需要一个人有强大的精神力量，在自己的工作中保持很好的克制，克制自己的懒惰和懈怠。</strong></p>
+<p>如何实现向上管理呢？抓手就是通过汇报工作，这也是 《向上管理：如何正确汇报工作》这本书名字的另一半。实际上工作是过程，汇报工作是结果，要形成好的汇报，必然需要先完成好的工作，汇报工作本身也是工作的一部分。</p>
+<h3 id="汇报工作的要点"><a href="#汇报工作的要点" class="headerlink" title="汇报工作的要点"></a>汇报工作的要点</h3><p>先说结论，再说过程。</p>
+<p>任何时候都不要擅自替领导做决定。</p>
+<p>越级汇报是职场中的大忌。</p>
+<p>提前准备好领导可能会问的问题。</p>
+<p>带着方案来而不仅仅带着问题来，让领导做选择题而不是填空题。</p>
+<p>你要么被动接受，要么主动沟通，不要总是做那个被动接受的人，只有主动沟通的人才是真正掌握局面的人。</p>
+<h3 id="沟通的要点"><a href="#沟通的要点" class="headerlink" title="沟通的要点"></a>沟通的要点</h3><p>首先是发送——清晰表达自己要表达的内容；其次是接收——明确对方表达的内容；最后是反馈——保证信息没有被误读。</p>
+<h3 id="只要你在一个环境内生存，你就要遵守这个环境的规则"><a href="#只要你在一个环境内生存，你就要遵守这个环境的规则" class="headerlink" title="只要你在一个环境内生存，你就要遵守这个环境的规则"></a>只要你在一个环境内生存，你就要遵守这个环境的规则</h3><p>就半年来我自己的感受，我的直属领导就是这样工作的，一切为领导先考虑好，领导的命令坚决执行，而且越是级别高的领导也就越需要有高的汇报工作的水平。</p>
+<p>把上司的问题变成自己的问题，把上司的目标变成自己的目标。让领导高兴了，才能轮得到你高兴，这就是职场吧。</p>
+
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/%E4%B9%A6%E8%AF%84/"># 书评</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2022/03/13/2022-03-13-How-to-grow-up-in-work/">《滴滴曹乐：如何成为技术大牛》</a>
+            
+            
+            <a class="next" rel="next" href="/2022/02/10/2022-02-08-2022-Spring-festival-in-BeiJing/">异乡的春节</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Bill Lee | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
